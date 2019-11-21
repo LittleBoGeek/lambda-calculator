@@ -1,9 +1,15 @@
 import React from "react";
+import data from "/Users/nadiachilds/Desktop/lambda-calculator/src/data.js"
 
-const SpecialButton = () => {
+
+const SpecialButton = (props) => {
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+    
+    <button onClick={() => {props.clickFunk(props.number)}} className={`nb`} id={props.id}>{props.special}</button>
+
     </>
-  );
+  )
 };
+
+export default SpecialButton

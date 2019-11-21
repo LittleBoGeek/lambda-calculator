@@ -27,11 +27,11 @@ const select = (number) => {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
      <div>
-     <Specials />
+     <Specials  />
      <Numbers clickFunk={select} />
-     </div>
-<div>
+     
      <Operators />
+  
      </div>
       </div>
     </div>

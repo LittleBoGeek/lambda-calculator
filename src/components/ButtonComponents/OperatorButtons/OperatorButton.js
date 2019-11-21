@@ -1,14 +1,15 @@
 import React from "react";
 
-const OperatorButton = () => {
-  return() operators.props)(
+
+const OperatorButton = (props) => {
+  return (
     <>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
-      <div> 
-        <button>
- Click me.
-        </button>
-      </div>
-    </>
-  );
+      
+   <button className="nb">{props.op.char}</button>
+</>
+  )
 };
+  
+
+export default OperatorButton
